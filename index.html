@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="./main.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calc-container">
+        <div class="screen">
+            <div class="top-screen">
+                <div id="top-num"></div>
+            </div>
+            <div class="bottom-screen">
+                <div id="bottom-num"></div>
+            </div>
+        </div>
+        <div class="calc-buttons">
+            <div class="buttons">
+                <button class="num-btn" onclick="reset('', '')" id="clear">C</button>
+                <button class="num-btn operator" onclick="backspace()"><=</button>
+                <button class="num-btn operator" onclick="getOperation('div')">/</button>
+            </div>
+            <div class="buttons">
+                <button class="num-btn" onclick="addToDisplay('7')">7</button>
+                <button class="num-btn" onclick="addToDisplay('8')">8</button>
+                <button class="num-btn" onclick="addToDisplay('9')">9</button>
+                <button class="num-btn operator" onclick="getOperation('mult')">*</button>
+            </div>
+            <div class="buttons">
+                <button class="num-btn" onclick="addToDisplay('4')">4</button>
+                <button class="num-btn" onclick="addToDisplay('5')">5</button>
+                <button class="num-btn" onclick="addToDisplay('6')">6</button>
+                <button class="num-btn operator" onclick="getOperation('sub')">-</button>
+            </div>
+            <div class="buttons">
+                <button class="num-btn" onclick="addToDisplay('1')">1</button>
+                <button class="num-btn" onclick="addToDisplay('2')">2</button>
+                <button class="num-btn" onclick="addToDisplay('3')">3</button>
+                <button class="num-btn operator" onclick="getOperation('add')">+</button>
+            </div>
+            <div class="buttons">
+                <button class="num-btn" onclick="addToDisplay('0')">0</button>
+                <button class="num-btn operator" onclick="addToDisplay('.')">.</button>
+                <button class="num-btn operator" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
