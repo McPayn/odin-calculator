@@ -10,6 +10,9 @@ function addToDisplay(num) {
         if (!is_reset && no_period) {
             const new_value = display.innerHTML + num;
             display.innerHTML = new_value;
+        } else {
+            display.innerHTML = num;
+            is_reset = false;
         }
     } else {
         if (!is_reset) {
